@@ -1,0 +1,247 @@
+!comment(This is not an XML file, this is just a collection of XML snippets)
+
+<style:style style:name="Heading"
+    style:family="paragraph"
+    style:parent-style-name="Standard"
+    style:next-style-name="Text_20_body"
+    style:class="text">
+
+    <style:paragraph-properties fo:margin-top="0.423cm"
+        fo:margin-bottom="0.212cm"
+        loext:contextual-spacing="false"
+        fo:keep-with-next="always"/>
+
+    <style:text-properties style:font-name="Verdana1"
+        fo:font-family="Verdana"
+        style:font-style-name="Полужирный"
+        style:font-family-generic="swiss"
+        style:font-pitch="variable"
+        fo:font-size="12pt"
+        fo:font-weight="bold"
+        style:font-name-asian="Lucida Sans Unicode"
+        style:font-family-asian="'Lucida Sans Unicode'"
+        style:font-family-generic-asian="system"
+        style:font-pitch-asian="variable"
+        style:font-size-asian="14pt"
+        style:font-name-complex="Tahoma"
+        style:font-family-complex="Tahoma"
+        style:font-family-generic-complex="system"
+        style:font-pitch-complex="variable"
+        style:font-size-complex="14pt"/>
+    </style:style>
+
+<style:style style:name="Title" 
+    style:family="paragraph" 
+    style:parent-style-name="Heading" 
+    style:next-style-name="Text_20_body" 
+    style:class="chapter">
+
+    <style:paragraph-properties 
+        fo:text-align="center" 
+        style:justify-single-word="false"/>
+
+    <style:text-properties 
+        fo:font-size="18pt" 
+        fo:font-weight="bold" 
+        style:font-size-asian="18pt" 
+        style:font-weight-asian="bold" 
+        style:font-size-complex="18pt" 
+        style:font-weight-complex="bold"/>
+
+  </style:style>
+
+<style:style style:name="Header" 
+    style:family="paragraph" 
+    style:parent-style-name="Standard" 
+    style:class="extra">
+
+    <style:paragraph-properties 
+        text:number-lines="false" 
+        text:line-number="0">
+
+        <style:tab-stops>
+            <style:tab-stop style:position="9.045cm" style:type="center"/>
+            <style:tab-stop style:position="18.09cm" style:type="right"/>
+        </style:tab-stops>
+   </style:paragraph-properties>
+
+  </style:style>
+
+<style:style style:name="Heading_20_1" 
+	style:display-name="Heading 1" 
+	style:family="paragraph" 
+	style:parent-style-name="Heading" 
+	style:next-style-name="Text_20_body" 
+	style:default-outline-level="1" 
+	style:class="text" 
+	style:master-page-name="">
+
+    <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
+    <style:paragraph-properties 
+        fo:margin-left="0cm" 
+        fo:margin-right="0cm" 
+        fo:margin-top="0.42cm" 
+        fo:margin-bottom="0.42cm" 
+        fo:text-indent="0cm" 
+        fo:background-color="transparent" 
+        loext:contextual-spacing="false" 
+        fo:text-align="start" 
+        style:justify-single-word="false" 
+        style:auto-text-indent="false" 
+        style:page-number="auto" 
+        text:number-lines="true" 
+        text:line-number="1">
+
+        <style:tab-stops>
+            <style:tab-stop style:position="0.75cm"/>
+        </style:tab-stops>
+
+        <style:drop-cap/>
+    </style:paragraph-properties>
+
+    <style:text-properties 
+        fo:font-family="Verdana" 
+        fo:font-size="12pt" 
+        fo:font-weight="bold" 
+        style:font-name="Verdana" 
+        style:font-style-name="Обычный" 
+        style:font-family-generic="swiss" 
+        style:font-pitch="variable" 
+        style:font-size-asian="115%" 
+        style:font-weight-asian="bold" 
+        style:font-size-complex="115%" 
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<style:style style:name="Heading_20_2"
+    style:display-name="Heading 2"
+    style:family="paragraph" 
+    style:parent-style-name="Heading" 
+    style:next-style-name="Text_20_body" 
+    style:default-outline-level="2" 
+    style:class="text">
+
+    <style:paragraph-properties 
+        fo:margin-top="0.42cm" 
+        fo:margin-bottom="0.42cm" 
+        loext:contextual-spacing="false" 
+        fo:text-align="start" 
+        style:justify-single-word="false">
+
+        <style:tab-stops>
+            <style:tab-stop style:position="1.251cm"/>
+        </style:tab-stops>
+
+    </style:paragraph-properties>
+
+    <style:text-properties 
+        fo:font-size="11pt" 
+        fo:font-style="italic" 
+        fo:font-weight="bold" 
+        style:font-size-asian="14pt" 
+        style:font-style-asian="italic" 
+        style:font-weight-asian="bold" 
+        style:font-size-complex="14pt" 
+        style:font-style-complex="italic" 
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<style:style style:name="Heading_20_3" 
+    style:display-name="Heading 3" 
+    style:family="paragraph" 
+    style:parent-style-name="Heading" 
+    style:next-style-name="Text_20_body" 
+    style:default-outline-level="3" 
+    style:class="text">
+
+    <style:paragraph-properties 
+        fo:margin-top="0.42cm" 
+        fo:margin-bottom="0.42cm" 
+        loext:contextual-spacing="false">
+
+        <style:tab-stops>
+            <style:tab-stop style:position="1.75cm"/>
+        </style:tab-stops>
+
+    </style:paragraph-properties>
+
+    <style:text-properties 
+        fo:font-size="11pt" 
+        fo:font-style="italic" 
+        fo:font-weight="normal" 
+        style:font-size-asian="14pt" 
+        style:font-weight-asian="bold" 
+        style:font-size-complex="14pt" 
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<style:style style:name="Heading_20_4"
+    style:display-name="Heading 4"
+    style:family="paragraph"
+    style:parent-style-name="Heading"
+    style:next-style-name="Text_20_body"
+    style:default-outline-level="4"
+    style:class="text">
+
+    <style:paragraph-properties 
+        fo:margin-top="0.42cm" 
+        fo:margin-bottom="0.42cm" 
+        loext:contextual-spacing="false">
+
+        <style:tab-stops>
+            <style:tab-stop style:position="2.251cm"/>
+        </style:tab-stops>
+
+    </style:paragraph-properties>
+
+    <style:text-properties fo:font-size="10pt"
+        fo:font-style="italic"
+        fo:font-weight="normal"
+        style:font-size-asian="85%"
+        style:font-style-asian="italic"
+        style:font-weight-asian="bold"
+        style:font-size-complex="85%"
+        style:font-style-complex="italic"
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<style:style style:name="Heading_20_5"
+    style:display-name="Heading 5"
+    style:family="paragraph"
+    style:parent-style-name="Heading"
+    style:next-style-name="Text_20_body"
+    style:default-outline-level="5"
+    style:class="text">
+
+    <style:text-properties fo:font-size="85%"
+        fo:font-weight="bold"
+        style:font-size-asian="85%"
+        style:font-weight-asian="bold"
+        style:font-size-complex="85%"
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<style:style style:name="Heading_20_6"
+    style:display-name="Heading 6"
+    style:family="paragraph"
+    style:parent-style-name="Heading"
+    style:next-style-name="Text_20_body"
+    style:default-outline-level="6"
+    style:class="text">
+
+    <style:text-properties fo:font-size="75%"
+        fo:font-weight="bold"
+        style:font-size-asian="75%"
+        style:font-weight-asian="bold"
+        style:font-size-complex="75%"
+        style:font-weight-complex="bold"/>
+
+</style:style>
+
+<!-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4
+-->

@@ -1,0 +1,88 @@
+<!-- it is not a proper XML, it is a snippet of styles for definition lists -->
+<style:style style:name="Definition_20_Term" 
+	style:display-name="Definition Term" 
+	style:family="paragraph" 
+	style:parent-style-name="Text_20_body" 
+	style:next-style-name="Definition_20_Definition">
+
+	<style:paragraph-properties 
+		fo:margin-top="0.152cm" 
+		fo:margin-bottom="0.152cm" 
+		loext:contextual-spacing="false"/>
+
+	<style:text-properties 
+		style:font-name="Verdana" 
+		fo:font-family="Verdana" 
+		style:font-style-name="Обычный" 
+		style:font-family-generic="swiss" 
+		style:font-pitch="variable" 
+		fo:font-size="10pt"/>
+  </style:style>
+
+<style:style style:name="Definition_20_Definition" 
+	style:display-name="Definition Definition" 
+	style:family="paragraph" 
+	style:parent-style-name="Text_20_body" 
+	style:next-style-name="Text_20_body">
+
+	<style:paragraph-properties 
+		fo:margin-left="1.27cm" 
+		fo:margin-right="0cm" 
+		fo:text-indent="0cm" 
+		style:auto-text-indent="false"/>
+
+	<style:text-properties 
+		style:font-name="Verdana" 
+		fo:font-family="Verdana" 
+		style:font-style-name="Обычный" 
+		style:font-family-generic="swiss" 
+		style:font-pitch="variable" 
+   		fo:font-weight="bold"
+		fo:font-size="10pt"/>
+</style:style>
+
+<style:style style:name="Definition_20_Term_20_Tight"
+	style:display-name="Definition Term Tight" 
+	style:family="paragraph" 
+	style:parent-style-name="Text_20_body" 
+	style:next-style-name="Definition_20_Definition_20_Tight">
+
+	<style:paragraph-properties 
+		fo:margin-top="0.203cm" 
+		fo:margin-bottom="0.203cm" 
+		loext:contextual-spacing="false"/>
+
+	<style:text-properties 
+		style:font-name="Verdana" 
+		fo:font-family="Verdana" 
+		style:font-style-name="Обычный" 
+		style:font-family-generic="swiss" 
+		style:font-pitch="variable" 
+   		fo:font-weight="bold"
+		fo:font-size="10pt"/>
+</style:style>
+
+<style:style style:name="Definition_20_Definition_20_Tight" 
+	style:display-name="Definition Definition Tight" 
+	style:family="paragraph" 
+	style:parent-style-name="Text_20_Body">
+
+	<style:paragraph-properties 
+		fo:margin-left="1.27cm" 
+		fo:margin-right="0cm" 
+		fo:margin-top="0cm" 
+		fo:margin-bottom="0cm" 
+		loext:contextual-spacing="false" 
+		fo:text-indent="0cm" 
+		style:auto-text-indent="false"/>
+
+	<style:text-properties 
+		style:font-name="Verdana" 
+		fo:font-family="Verdana" 
+		style:font-style-name="Обычный" 
+		style:font-family-generic="swiss" 
+		style:font-pitch="variable" 
+		fo:font-size="10pt"/>
+  </style:style>
+
+  <style:style style:name="Definition" style:family="text"/>
