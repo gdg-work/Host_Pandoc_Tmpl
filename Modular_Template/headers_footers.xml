@@ -1,0 +1,24 @@
+<office:master-styles
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    office:version="1.2">
+
+
+    <!-- uses a defined page layout name (see page-layouts) -->
+    <style:master-page style:name="Standard" style:page-layout-name="pm1">
+        <style:header>
+            <text:p text:style-name="Header"></text:p>
+        </style:header>
+        <style:footer>
+            <text:p text:style-name="Footer">
+                <text:page-number text:select-page="current"/>
+                <text:s text:c="3"/>
+            </text:p>
+        </style:footer>
+
+    </style:master-page>
+
+</office:master-styles>
+<!-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4
+-->

@@ -1,0 +1,60 @@
+<!-- style file for table body text and tables.  This is a collection of XML snippets -->
+<style:default-style style:family="table">
+    <style:table-properties table:border-model="collapsing"/>
+</style:default-style>
+
+<style:default-style style:family="table-row">
+    <style:table-row-properties fo:keep-together="auto"/>
+</style:default-style>
+
+<style:style style:name="Table_20_Contents"
+    style:display-name="Table Contents"
+    style:family="paragraph"
+    style:parent-style-name="Text_20_Body"
+    style:class="extra">
+
+    <style:paragraph-properties fo:margin-left="0cm"
+        fo:margin-right="0cm"
+        fo:margin-top="0cm"
+        fo:margin-bottom="0.109cm"
+        loext:contextual-spacing="false"
+        fo:text-align="start"
+        style:justify-single-word="false"
+        fo:text-indent="0cm"
+        style:auto-text-indent="false"
+        text:number-lines="false"
+        text:line-number="0"/>
+
+    <style:text-properties fo:font-size="9pt"/>
+
+</style:style>
+
+<style:style style:name="Table_20_Heading"
+    style:display-name="Table Heading"
+    style:family="paragraph"
+    style:parent-style-name="Table_20_Contents"
+    style:class="extra">
+
+    <style:paragraph-properties
+        fo:margin-left="0cm"
+        fo:margin-right="0cm"
+        fo:margin-top="0cm"
+        fo:margin-bottom="0.109cm"
+        fo:text-align="center"
+        fo:text-indent="0cm"
+        loext:contextual-spacing="false"
+        style:justify-single-word="false"
+        style:auto-text-indent="false"
+        style:shadow="none"
+        text:number-lines="false"
+        text:line-number="0"/>
+
+    <style:text-properties fo:font-size="9pt"
+        fo:font-weight="bold"
+        style:font-weight-asian="bold"
+        style:font-weight-complex="bold"/>
+
+</style:style>
+<!-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4
+-->
+

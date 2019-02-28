@@ -41,34 +41,43 @@
 
 !include(styles_main.xml)
 
-!include(page_styles.xml)
+!include(page_layouts.xml)
+
+!include(headers_footers.xml)
 
 $for(header-includes)$
   $header-includes$
 $endfor$
+
 <office:body>
+
 <office:text>
+
+<!-- standard (simple) header -->
 $if(title)$
 <text:p text:style-name="Title">$title$</text:p>
 $endif$
 $for(author)$
 <text:p text:style-name="Author">$author$</text:p>
 $endfor$
-<!--
 $if(date)$
 <text:p text:style-name="Date">$date$</text:p>
 $endif$
--->
+
 $for(include-before)$
 $include-before$
 $endfor$
+
 $if(toc)$
-!include(toc_style.xml)
+$toc$
 $endif$
+
 $body$
+
 $for(include-after)$
 $include-after$
 $endfor$
+
 </office:text>
 </office:body>
 </office:document-content>
