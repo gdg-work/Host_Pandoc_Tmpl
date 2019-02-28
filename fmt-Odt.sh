@@ -23,4 +23,4 @@ pandoc  -s -f markdown+definition_lists \
 	-o "$OUTFILE"
 
 # -top-level-division=chapter
-# --template="$TEMPLATE_OUT" \
+# --lua-filter Pandoc/task-list.lua \

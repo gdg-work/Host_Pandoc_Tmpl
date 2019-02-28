@@ -21,12 +21,13 @@
 --   - address: https://github.com/jzeneto
 -- date: february 2018
 -- license: GPL version 3 or later
+local List = require 'pandoc.List'
 
 local listStyle = 'List_20_1'
-local listParaStyle = 'List_20_1'
+local listParaStyle = 'ListPara'
 
 local numListStyle = 'Numbering_20_1'
-local numListParaStyle = 'Numbering_20_1'
+local numListParaStyle = 'numListPara'
 
 local utilPath = string.match(PANDOC_SCRIPT_FILE, '.*[/\\]')
 require ((utilPath or '') .. 'util')
@@ -35,6 +36,7 @@ local tags = {}
 tags.listStart = '<text:list text:style-name=\"' .. listStyle .. '\">'
 tags.numListStart = '<text:list text:style-name=\"' .. numListStyle .. '\">'
 tags.listEnd = '</text:list>'
+
 tags.listItemStart = '<text:list-item>'
 tags.listItemEnd = '</text:list-item>'
 
@@ -65,6 +67,7 @@ end
 
 local function listFilter(list, isOrdered)
   if listHasInnerList(list) then
+    -- here we can select inner list and call listFilter with that list
     return list
   end
   list = pandoc.walk_block(list, getFilter(isOrdered))
@@ -87,3 +90,4 @@ function OrderedList(list)
     return listFilter(list, true)
   end
 end
+-- vim:ts=2:softtabstop=2:expandtab:shiftwidth=2

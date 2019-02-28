@@ -115,5 +115,30 @@
 <text:list-style style:name="Numbering_20_4" style:display-name="Numbering 4" style:parent-style-name="Numbering_20_List_Markers"/>
 <text:list-style style:name="Numbering_20_5" style:display-name="Numbering 5" style:parent-style-name="Numbering_20_List_Markers"/>
 
+<style:style style:name="numListPara" style:display-name="Numbered List Paragraph general" 
+    style:family="paragraph" 
+    style:parent-style-name="Standard"
+    style:class="text">
+
+    <style:paragraph-properties 
+        fo:margin-left="0cm" 
+        fo:margin-right="0cm" 
+        fo:margin-top="0cm" 
+        fo:margin-bottom="0cm" 
+        fo:text-align="justify" 
+        fo:text-indent="0.75cm" 
+        loext:contextual-spacing="false" 
+        style:justify-single-word="false" 
+        style:auto-text-indent="false"/>
+
+    <style:text-properties 
+        fo:font-family="Verdana" 
+        fo:font-style="italic"
+        fo:font-size="10pt"
+        style:font-style-name="Обычный" 
+        style:font-name="Verdana" 
+        style:font-family-generic="swiss" 
+        style:font-pitch="variable" />
+</style:style>
 <!-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4
 -->
