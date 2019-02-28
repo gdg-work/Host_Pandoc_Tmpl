@@ -1,13 +1,13 @@
 #!/bin/sh
 TEMPDIR="/tmp/"
-OUTFILE="/tmp/Report.odt"
+OUTFILE="/tmp/Test_output.odt"
 TEMPLATE_DIR="Modular_Template"
 TEMPLATE_MAIN="tempate_main.pp"
-TEMPLATE_OUT="$TEMPDIR/host.opendocument"
+TEMPLATE_OUT="$TEMPDIR/host_template.opendocument"
 
 # 1 Create a template file
 pushd "$TEMPLATE_DIR"
-/usr/bin/pp -import template_list_style.pp template_main.pp > $TEMPLATE_OUT
+/usr/bin/pp -import generate_list_styles.pp template_main.pp > $TEMPLATE_OUT
 popd
 
 echo "Created a template, using it for the document"
@@ -20,8 +20,7 @@ pandoc  -s -f markdown+definition_lists \
         --template="$TEMPLATE_OUT" \
 	--verbose \
 	--data-dir="$(pwd)/Pandoc" \
-	-o "$OUTFILE" \ 
-	report_1.md
+	-o "$OUTFILE"
 
 # -top-level-division=chapter
 # --template="$TEMPLATE_OUT" \
