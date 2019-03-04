@@ -37,6 +37,34 @@ tags.listEnd = '</text:list>'
 tags.listItemStart = '<text:list-item>'
 tags.listItemEnd = '</text:list-item>'
 
+-- utility function: check if a string is nil or empty
+local function isempty(s)
+  return s == nil or s == ''
+end
+
+-- print a data structure (possibly recursively)
+local function print_r(arr, indentLevel)
+  local str = ""
+  local indentStr = "#"
+  if(indentLevel == nil) then
+    print(print_r(arr, 0))
+    return
+  end
+  for i = 0, indentLevel do
+    indentStr = indentStr .. "  "
+  end
+  for index, value in pairs(arr) do
+    if type(value) == "table" then
+      str = str..indentStr..index..": \n"..print_r(value, (indentLevel + 1))
+    else 
+      if not isempty(value) then
+        str = str..indentStr..index..": "..value.."\n"
+      end
+    end
+  end
+  return str
+end
+
 local function listHasInnerList(list)
   local hasInnerList = false
   pandoc.walk_block(list, {
@@ -72,6 +100,7 @@ local function listFilter(list, isOrdered)
     listTag = tags.numListStart
   end
   local rawList = listTag .. pandoc.utils.stringify(list) .. tags.listEnd
+  print(rawList)
   return pandoc.RawBlock('opendocument', rawList)
 end
 
