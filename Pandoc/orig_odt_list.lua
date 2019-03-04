@@ -24,8 +24,8 @@
 
 local listStyle = 'List_20_1'
 local numListStyle = 'Numbering_20_1'
-local listParaStyle = 'List_20_1'
-local numListParaStyle = 'Numbering_20_1'
+local listParaStyle = 'listPara'
+local numListParaStyle = 'numListPara'
 
 local utilPath = string.match(PANDOC_SCRIPT_FILE, '.*[/\\]')
 require ((utilPath or '') .. 'util')
@@ -75,14 +75,24 @@ local function listHasInnerList(list)
   return hasInnerList
 end
 
+local function getStartTag(forOrderedList)
+  local paraStyle = listParaStyle
+  if forOrderedList then
+    paraStyle = numListParaStyle
+  end
+  local paraStartTag = '<text:p text:style-name=\"' .. paraStyle .. '\">'
+  return paraStartTag
+end
+
 local function getFilter(forOrderedList)
   local blockToRaw = util.blockToRaw
+  local paraStartTag = getStartTag(forOrderedList)
   blockToRaw.Plain = function (item)
-    local paraStyle = listParaStyle
-    if forOrderedList then
-      paraStyle = numListParaStyle
-    end
-    local paraStartTag = '<text:p text:style-name=\"' .. paraStyle .. '\">'
+    local para = paraStartTag .. pandoc.utils.stringify(item) .. '</text:p>'
+    local content = tags.listItemStart .. para .. tags.listItemEnd
+    return pandoc.Plain(pandoc.Str(content))
+  end
+  blockToRaw.Para = function (item)
     local para = paraStartTag .. pandoc.utils.stringify(item) .. '</text:p>'
     local content = tags.listItemStart .. para .. tags.listItemEnd
     return pandoc.Plain(pandoc.Str(content))
@@ -91,6 +101,9 @@ local function getFilter(forOrderedList)
 end
 
 local function listFilter(list, isOrdered)
+  print("*DBG* listFilter called with a list with a length of " .. #list.content .. ' elements')
+  print_r(list)
+
   if listHasInnerList(list) then
     return list
   end
@@ -115,3 +128,4 @@ function OrderedList(list)
     return listFilter(list, true)
   end
 end
+-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4

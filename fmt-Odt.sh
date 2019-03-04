@@ -24,7 +24,7 @@ pp -import macro.pp main.pp |
 pandoc  -s -f markdown+definition_lists \
 	--data-dir="$(pwd)/Pandoc" \
 	-t odt --metadata lang:ru \
-	--lua-filter $(pwd)/Pandoc/odt-lists.lua \
+	--lua-filter $(pwd)/Pandoc/orig_odt_list.lua \
 	--verbose \
         --template="$TEMPLATE_OUT" \
 	-o "$OUTFILE"

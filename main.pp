@@ -1,1 +1,2 @@
-!include(test/lists.md)
+!include(test/simplest_list.md)
+!comment(!include(test/lists.md))
