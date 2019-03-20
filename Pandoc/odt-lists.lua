@@ -188,7 +188,8 @@ local function listFilter(list, isOrdered)
 
 
     if listHasInnerList(list) then
-        return list
+        -- so, we have at least 1 element of the list that is a list itself
+        return listFilter(list.content[1])
     end
 
     -- walk throw list's elements in a cycle
