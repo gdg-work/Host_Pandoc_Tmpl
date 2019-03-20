@@ -100,8 +100,10 @@
     <style:text-properties style:font-name="Verdana"/>
 </style:style>
 
-    <!-- List styles - is these styles used somewhere? -->
+    <!-- List paragraph? styles - is these styles used somewhere? -->
 <text:list-style style:name="List_20_1"  style:display-name="List 1"  style:parent-style-name="List" />
+<text:list-style style:name="List_20_2"  style:display-name="List 2"  style:parent-style-name="List" />
+
 
 <!-- vim:ts=4:softtabstop=4:expandtab:shiftwidth=4
 -->
